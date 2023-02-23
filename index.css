@@ -2,10 +2,10 @@ html, body, header{
      margin: 0;
      padding: 0;
      font-family: verdana;
-     box-sizing:border-box;
+     background-color: #F5F5FA;
 }
 
-.container{
+nav {
      margin: 0;
      padding: 0;
 
@@ -14,7 +14,7 @@ html, body, header{
      
      background-color: #D71832;
      position: absolute;
-
+     
      display: flex;
      align-items: center;
      justify-content: space-around;
@@ -27,34 +27,67 @@ h2{
      letter-spacing: 3px;
 }
 
-.container ul li{
-     list-style: none;
-     display: inline-block;
-     padding: 1em;
-     margin: 0;
-}
 
-.container ul li ul li {
-     display: none;
-}
-
-.container li:hover>ul li{
-     display: block;
-}
-
-
+/*? Estilo para el navegador */
 li{
      cursor: pointer;
-     transition: all .5s ease-in-out;
+     transition: all 0.5s ease-in-out;
      margin: 0.5em;
      padding: 10px 15px;
      color: antiquewhite;
      border-radius: 20px;
 }
 
+
+
 li:hover {
      background-color: rgba(17, 16, 16, 0.521);
-     
      box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.4);
 }
+ 
 
+
+
+nav li{
+     list-style: none;
+     display: inline-block;
+     position: relative;
+     padding: 1em;
+     margin: 0;
+     margin-bottom: 5px
+}
+
+nav li> ul{
+     display: none;
+
+     width: 9vw;
+
+     padding-top: 10px;
+     padding-bottom: 10px;
+
+     background-color: rgb(0, 0, 0, 0.4);
+     border-radius: 0% 25% 10% 15%;
+
+     top: 5vh;
+     left: 30%;
+
+     
+}
+
+nav li> ul li{
+     left: -30px;
+     width: 80%;
+}
+
+nav li:hover>ul{
+     display: block;
+     position:absolute;
+}
+
+
+
+/*? Body */
+
+img{
+     image-rendering: crisp-edges;
+}
